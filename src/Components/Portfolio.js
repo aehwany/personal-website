@@ -1,88 +1,131 @@
-import React, {Component} from 'react';
-import aide from "../images/AIDE.jpg"
-import ecse223 from "../images/ecse223.png"
-import bird from "../images/McGillBird.jpg"
-import dataVerif from "../images/dataVerif.png"
-import scripts from "../images/scripts.png"
-import website from "../images/website.jpg"
+import React, { Component, useState } from "react";
+import { Nav, Navbar } from "react-bootstrap";
+import aide from "../images/AIDE.jpg";
+import ecse223 from "../images/ecse223.png";
+import dataVerif from "../images/dataVerif.png";
+import wisp from "../images/wisp.png";
 
 class Portfolio extends Component {
     render() {
-
-        function compare(el1, el2, index) {
-            return el1[index] === el2[index] ? 0 : (el1[index] < el2[index] ? -1 : 1);
-        }
-
         const projects = [
             {
-                "title": "AIDE - GUI tool",
-                "category": "Built during my S19 intern",
-                "image": aide,
-                "url": "https://github.com/ding-ma/Projet-tude-de-cas-en-Qualit-de-l-air"
+                title: "WISP Online",
+                section: "wisp",
+                description: [
+                    "WISP Online is an online platform to track students' progress in Competitive Programming and provide gamification to facilitate the introduction of students to Competitive Programming.We hope to provide our own online judge in the near future.",
+                    "WISP is built with a Microservice Oriented Architecture on ExpressJS, with a VueJS frontend.",
+                ],
+                tech: ["Kubernetes - ", "ExpressJS - ", "MongoDB - ", "VueJS"],
+                image: wisp,
+                url:
+                    "https://github.com/ding-ma/Projet-tude-de-cas-en-Qualit-de-l-air",
             },
             {
-                "title": "Brick Breaker",
-                "category": "Class project: model-based programming",
-                "image": ecse223,
-                "url": "https://github.com/ding-ma/ECSE-223-Brick-Breaker"
+                title: "Treeple Tree Management System",
+                section: "treeple",
+                description: [
+                    "Treeple is my first ever Web Project, it was developed as part of the ECSE 321 course at McGill University.",
+                    "It won Second Place out of over 20 groups during the semester",
+                    "Treeple is a system to manage trees and view sustainability information in the Greater Montreal Area.",
+                    "It has a monolithic Spring Boot Backend, a VueJS frontend and an Android Frontend!",
+                ],
+                tech: ["Spring Boot - ", "VueJS - ", "Android(Java)"],
+                image:
+                    "https://camo.githubusercontent.com/87bd964b9c19e914c17c9004f1e28f1f869f1031/68747470733a2f2f692e696d6775722e636f6d2f43367a466652682e706e67",
+                url: "https://github.com/ding-ma/ECSE-223-Brick-Breaker",
             },
             {
-                "title": "Minerva Auto-Registration",
-                "category": "Registers automatically to classes with Puppeteer and GCP",
-                "image": bird,
-                "url": "https://github.com/ding-ma/mcgill-autoregistration"
+                title: "Mizan",
+                section: "mizan",
+                description: ["Mizan is a shopify website that I built for a local market to help them sustain their operations by facilitating remote online shopping \
+                and minimize potential losses imposed by the COVID-19 situation. In addition to the website, I have also built a simplified user-friendly embedded application that acts as a customized admin panel  \
+                to help manage running the store easily. The application interacts with the Shopify Admin API to carryout operations such as updating inventory, viewing received orders \
+                and capturing authorized payments. We hope to post the application on the Shopify AppStore to be used by other local stores soon!"],
+                tech: ["ReactJS - ", "Polaris - ", "NextJS - ", "KoaJS - ", "Google Maps Api"],
+                image: null,
+                url: "https://github.com/ding-ma/Weather_Bulleting_Separator",
             },
             {
-                "title": "Miscellaneous Scripts",
-                "category": "Small form built during my S19 intern to help my life",
-                "image": scripts,
-                "url": "https://github.com/ding-ma/Weather_Bulleting_Separator"
+                title:
+                    "Automated Test Generation Techniques for Systems Engineering Tools",
+                section: "dp",
+                description: [
+                    "As you can probably tell by the lengthy, descriptive title, this is a research project that I completed as part of my Capstone project.",
+                    "The objective of this project was to leverage the VIATRA Model Generator to improve the automation of tests for Systems Engineering tools.",
+                    "This project was a really great experience since I really love modelling and I had a chance to play around with models of a whole bunch of different languages as part of the project.",
+                    "We demonstrated, as a proof of concept, the use of the VIATRA Model Generator to help automate testing on Yakindu Statechart Tools.",
+                    "While I often hear complaints about how finnicky research is, and I got a taste of this during this project, I actually enjoyed that part of the process quite a bit - as it made the end-product quite a bit more enjoyable for me.",
+                ],
+                tech: [
+                    "Eclipse Modelling Framework - ",
+                    "Java (Xtend) - ",
+                    "VIATRA - ",
+                    "Constraint Programming",
+                ],
+                image: null,
+                url: "https://github.com/ding-ma/mcgill-autoregistration",
             },
             {
-                "title": "Data Verification",
-                "category": "Script that analyzes weather data and highlights important information",
-                "image": dataVerif,
-                "url": "https://github.com/ding-ma/Data_Verification"
+                title: "Network Design CLI",
+                section: "network",
+                description: [
+                    "This is a CLI I built for the final project for our course on Fault Tolerant Computing.",
+                    "It is a Python CLI that takes, as input, a list of network nodes and connections with various costs / reliabilities and outputs the optimal connected network design.",
+                    "This project was not necessarily the most difficutl I've had to do at my time at McGill, but I thoroughly enjoyed the course on Fault Tolerance and wanted to include it here!",
+                ],
+                tech: ["Python"],
+                image: null,
+                url: "https://github.com/ding-ma/portfolio",
             },
-            {
-                "title": "This Website",
-                "category": "Built in React.js. Simple. Responsive website.",
-                "image": website,
-                "url": "https://github.com/ding-ma/portfolio"
-            }
-        ].sort(function (el1, el2) {
-                let compared = compare(el1, el2, "title");
-                return compared === 0 ? -compare(el1, el2, "title") : compared;
-            }
-        ).map(function (project) {
-            return <div key={project.title} className="columns portfolio-item">
-                <a href={project.url} target="_blank">
-                    <div className="item-wrap">
-                        <img alt={project.title} src={project.image}/>
-                        <div className="overlay">
-                            <div className="portfolio-item-meta">
-                                <h5>{project.title}</h5>
-                                <p>{project.category}</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+        ].map((project) => {
+            return (
+                <section  id={project.section}>
+                    <h1>{project.title}</h1>
+                    {project.description.map((item) => {
+                        return <strong>{item}</strong>;
+                    })}
+                    <p>
+                        <b>Technologies: </b> {project.tech.map((item) => item)}
+                    </p>
+                    {project.image ? <img style={{"max-height":"350px", "border-radius":"15px", padding: "10px"}} src={project.image} alt=""></img> : null}
+                     <hr/>
+                </section>
+            );
         });
 
         return (
             <section id="portfolio">
-
+                <nav id="nav-ver">
+                    <ul>
+                        <li>
+                            <a className="smoothscroll" href="#wisp">
+                                Wisp Online
+                            </a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#treeple">
+                                TreePle
+                            </a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#dp">
+                                Capstone Project
+                            </a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#mizan">
+                                Mizan
+                            </a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#network">
+                                Network Designer
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
                 <div className="row">
-
-                    <div className="twelve columns collapsed">
-
-                        <h1>Check Out Some of My Works.</h1>
-
-                        <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-                            {projects}
-                        </div>
-                    </div>
+                    <div className="ten columns main-col">{projects}</div>
                 </div>
             </section>
         );

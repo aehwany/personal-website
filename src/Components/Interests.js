@@ -1,129 +1,188 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
+import aide from "../images/AIDE.jpg";
+import ecse223 from "../images/ecse223.png";
+import dataVerif from "../images/dataVerif.png";
+import squash from "../images/squash.jpg";
+import volunteering from "../images/volunteering.jpg";
+import iskender from "../images/iskender.jpg";
+import falafel from "../images/falafel.jpeg";
+import ripples from "../images/ripples.jpg";
 
 class Interests extends Component {
     render() {
-
-        const works = [
+        const food = [
             {
-                "company": "Desjardins",
-                "title": "Incoming Solutions Developer",
-                "location": "Montréal, Québec",
-                "years": "May 2020 - August 2020",
-                "description": "Will be developing an internal crypto currency based on Blockchain."
+                title: "Falafel St Jacques",
+                category: "Quality Middle Eastern Vegetarian Cuisine",
+                image: falafel,
+                url:
+                    "https://github.com/ding-ma/Projet-tude-de-cas-en-Qualit-de-l-air",
             },
             {
-                "company": "Environment and Climate Change Canada",
-                "title": "Data Analyst",
-                "location": "Montréal, Québec",
-                "years": "May 2019 - August 2019",
-                "description": "Built data extraction tool and analysed data for meteorologists."
-            }
-        ].map(function (work) {
-
-            return (<div key={work.title}><h3>{work.title}</h3>
-                <p className="info">{work.company}<span>&bull;</span>
-                    <em className="date">{work.years}</em><br/>
-                    <em className="date">{work.location}</em>
-                </p>
-                <p>{work.description}</p>
-            </div>)
-        });
-
-        const skills = [
-            "Python (Pandas, openCV, NumPy, Matplotlib, Selenium)",
-            "Git",
-            "Java (Spring Framework)",
-            "Heroku",
-            "Postgres",
-            "Assembly - ARM",
-            "C",
-            "Bash",
-            "UNIX",
-            "Cloud Services (GCP)",
-            "JavaScript (React, Puppeteer)"
-        ].sort().map(function (skill) {
-            return <ul key={skill}>{skill}</ul>
-        });
-
-        const education = [{
-            "school": "McGill University",
-            "degree": "Software Engineering (B.Eng)",
-            "graduated": "September 2018 - Present",
-            "location": "Montréal, Québec",
-            "description": [
-                "Involved in McGill Robotics design club.",
-                "Tutoring at CSUS HelpDesk"
-            ]
-        },
+                title: "Ripples",
+                category: "Montreal's award winning, best homemade ice cream",
+                image: ripples,
+                url: "https://github.com/ding-ma/ECSE-223-Brick-Breaker",
+            },
             {
-                "school": "Heritage College",
-                "degree": "General DEC - Science",
-                "graduated": "September 2016 - May 2018",
-                "location": "Gatineau, Québec",
-                "description": [
-                    "Graduated with honors"
-                ]
-            }].map(function (education) {
-            function renderList(d) {
-                const items = d.map((a) => <li key={a}>{a}</li>);
-                return <div>
-                    {items}
-                </div>
-            }
-
+                title: "Kebab Express",
+                category: "Authentic Turkish Cuisine",
+                image: iskender,
+                url: "https://github.com/ding-ma/mcgill-autoregistration",
+            },
+        ].map((item) => {
             return (
-                <div key={education.school}><h3>{education.school}</h3>
-                    <p className="info">{education.degree}<span>&bull;</span>
-                        <em className="date">{education.graduated}</em><br/>
-                        <em className="date">{education.location}</em>
-                    </p>
-                    {renderList(education.description)}
-                    &nbsp;
+                <div key={item.title} className="columns portfolio-item">
+                    <a href={item.url} target="_blank">
+                        <div className="item-wrap">
+                            <img alt={item.title} src={item.image} />
+                            <div className="overlay">
+                                <div className="portfolio-item-meta">
+                                    <h5>{item.title}</h5>
+                                    <p>{item.category}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            )
+            );
         });
 
         return (
             <section id="interests">
-                <div className="row education">
-                    <div className="three columns header-col">
-                        <h1><span>Education</span></h1>
+                <div className="row">
+                    <div className="column">
+                        <h1>Squash</h1>
+                        <p>
+                            Since I held my first racquet 8 years ago, I fell in
+                            love with squash. I’ve been playing regularly since
+                            then and Squash became a big part of my life.
+                            Joining the McGill Varsity Squash team has been one
+                            of the highlights of my college years. Throughout
+                            the year, I participate in inter-school varsity
+                            tournaments and travel with team to represent McGill
+                            in the away tournaments. From time to time, I also
+                            play for McGill in the Montreal Squash League where
+                            I get to meet a lot of Quebec's young talents and
+                            cool squash enthusiasts who share my passion for the
+                            sport which gets me even more thrilled about it day
+                            after day.
+                        </p>
                     </div>
-
-                    <div className="nine columns main-col">
-                        <div className="row item">
-                            <div className="twelve columns">
-                                {education}
-                            </div>
-                        </div>
+                    <div className="column">
+                        <img
+                            style={{
+                                "max-width": "560px",
+                                "border-radius": "15px",
+                                padding: "10px",
+                            }}
+                            src={squash}
+                        ></img>
                     </div>
+                    <hr />
                 </div>
 
-
-                <div className="row work">
-
-                    <div className="three columns header-col">
-                        <h1><span>Internships</span></h1>
+                <div className="row">
+                    <div className="column">
+                        <h1>Volunteering</h1>
+                        <p>
+                            During my time back in Egypt, I used to spend much
+                            of my time volunteering at the Egyptian Charity
+                            Organization for Supporting Cancer Patients. I
+                            decided the join the organization shortly after
+                            witnessing the daily struggles of that disease being
+                            reflected in a close one in my family. I realized
+                            that unlike a lot of people might think, patients
+                            fighting this disease tend to struggle with moral
+                            support and motivational drive more than the
+                            physical therapy itself. I was in charge of planning
+                            weekly bike rides for cancer patients to engage them
+                            in building social connection and gain experience
+                            and motivation from other fighters who’ve been
+                            bravely fighting the disease for long years. I was
+                            also in charge of the social media of the
+                            organization to make it more representative and
+                            informative for the followers.
+                        </p>
                     </div>
-
-                    <div className="nine columns main-col">
-                        {works}
+                    <div className="column">
+                        <img
+                            style={{
+                                "max-width": "560px",
+                                "border-radius": "15px",
+                                padding: "10px",
+                            }}
+                            src={volunteering}
+                        ></img>
                     </div>
+                    <hr />
                 </div>
 
+                <div className="row">
+                    <div className="twelve columns collapsed">
+                        <h1>Check out my food blog.</h1>
 
-                <div className="row skill">
-                    <div className="three columns header-col">
-                        <h1><span>Skills</span></h1>
-                    </div>
-
-                    <div className="nine columns main-col">
-                        <p>Here are some technologies that I have worked with</p>
-                        <div className="bars">
-                            <ul className="skills">
-                                {skills}
-                            </ul>
+                        <div
+                            id="portfolio-wrapper"
+                            className="bgrid-quarters s-bgrid-thirds cf"
+                        >
+                            {food}
                         </div>
+                    </div>
+                    <hr />
+                </div>
+
+                <div className="row">
+                    <h1>Music</h1>
+                    <div class="book-shelf">
+                        <iframe
+                            src="https://open.spotify.com/embed/playlist/44jwAWPFwRyjtfU4Sl4guW"
+                            width="300"
+                            height="380"
+                            frameborder="0"
+                            allowtransparency="true"
+                            allow="encrypted-media"
+                        ></iframe>
+                        <iframe
+                            src="https://open.spotify.com/embed/album/1jToVugwBEzcak8gJNZG2f"
+                            width="300"
+                            height="380"
+                            frameborder="0"
+                            allowtransparency="true"
+                            allow="encrypted-media"
+                        ></iframe>
+                        <iframe
+                            src="https://open.spotify.com/embed/album/5PVuX09frPq7AMYkkdcDfR"
+                            width="300"
+                            height="380"
+                            frameborder="0"
+                            allowtransparency="true"
+                            allow="encrypted-media"
+                        ></iframe>
+                        <iframe
+                            src="https://open.spotify.com/embed/album/1rVhockt4RAiZFaK3M3zPB"
+                            width="300"
+                            height="380"
+                            frameborder="0"
+                            allowtransparency="true"
+                            allow="encrypted-media"
+                        ></iframe>
+                        <iframe
+                            src="https://open.spotify.com/embed/playlist/73Tt0c2SXMJoF3tkmlQzmW"
+                            width="300"
+                            height="380"
+                            frameborder="0"
+                            allowtransparency="true"
+                            allow="encrypted-media"
+                        ></iframe>
+                        <iframe
+                            src="https://open.spotify.com/embed/playlist/14f9xlIENpOGspIQ3Vv3PP"
+                            width="300"
+                            height="380"
+                            frameborder="0"
+                            allowtransparency="true"
+                            allow="encrypted-media"
+                        ></iframe>
                     </div>
                 </div>
             </section>

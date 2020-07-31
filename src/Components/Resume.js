@@ -1,129 +1,182 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
 class Resume extends Component {
     render() {
-
         const works = [
             {
-                "company": "Desjardins",
-                "title": "Incoming Solutions Developer",
-                "location": "Montréal, Québec",
-                "years": "May 2020 - August 2020",
-                "description": "Will be developing an internal crypto currency based on Blockchain."
+                company: "CAE Inc.",
+                title: "Software Engineering Intern",
+                location: "Montréal, Québec",
+                years: "May 2020 - August 2020",
+                description: [
+                    "Awarded Certificate of Excellence for algorithmic optimization.",
+                    "Designed, improved and tested C++ APIs and internal tools, shipping them successfully into production.",
+                    "Led a project to use a Git open-source library to manage configuration files used across over 50 flight simulation training sites worldwide.",
+                ],
             },
             {
-                "company": "Environment and Climate Change Canada",
-                "title": "Data Analyst",
-                "location": "Montréal, Québec",
-                "years": "May 2019 - August 2019",
-                "description": "Built data extraction tool and analysed data for meteorologists."
-            }
+                company: "Tactio Health Group",
+                title: "IoT Software Engineering Intern",
+                location: "Montréal, Québec",
+                years: "May 2019 - August 2019",
+                description: [
+                    "Worked on IoT Bluetooth data syncing between medical devices.",
+                    "Partook in the design of a new Zigbee protocol.",
+                    "Redesigned Android library to allow for Bluetooth multi-streaming.",
+                    "Improved Android client apps with over 4.5M users.",
+                ],
+            },
         ].map(function (work) {
+            return (
+                <div key={work.title}>
+                    <h3>{work.title}</h3>
+                    <p className="info">
+                        {work.company}
+                        <span>&bull;</span>
+                        <em className="date">{work.years}</em>
+                        <br />
+                        <em className="date">{work.location}</em>
+                    </p>
+                    {work.description.map((item) => {
+                        return <li>{item}</li>;
+                    })}
+                    <br />
+                </div>
+            );
+        });
 
-            return (<div key={work.title}><h3>{work.title}</h3>
-                <p className="info">{work.company}<span>&bull;</span>
-                    <em className="date">{work.years}</em><br/>
-                    <em className="date">{work.location}</em>
-                </p>
-                <p>{work.description}</p>
-            </div>)
+        const awards = [
+            "2019 - CAE Certificate of Excellence",
+            "2019 - Most Practical Award in 'McGill Women in CS Hackathon'",
+            "2018,2019 - McGill Tomlinson Engagement Award for Mentorship",
+        ].map((award) => {
+            return <li>{award}</li>;
+        });
+
+        const courses = [
+            {
+                type: "Extracurricular",
+                list: [
+                    "Intro to Shopify App Development with React, Node & GraphQL(Udemy Course)",
+                    "Vue JS & Firebase Course (Youtube)",
+                ],
+            },
+            {
+                type: "Undergraduate",
+                list: [
+                    "Operating Systems",
+                    "Fault Tolerant Systems",
+                    "Software Requirements Engineering",
+                    "Data Structures and Algorithms",
+                    "Model-Based Programming",
+                    "Systems Programming",
+                    "Signals and Networks,",
+                    "Computer Organization",
+                ],
+            },
+        ].map((course) => {
+            return (
+                <div>
+                    <h1 className="info"> {course.type}</h1>
+                    {course.list.map((item) => {
+                        return <li>{item}</li>;
+                    })}
+                    <br />
+                </div>
+            );
         });
 
         const skills = [
-            "Python (Pandas, openCV, NumPy, Matplotlib, Selenium)",
-            "Git",
-            "Java (Spring Framework)",
-            "Heroku",
-            "Postgres",
-            "Assembly - ARM",
-            "C",
-            "Bash",
-            "UNIX",
-            "Cloud Services (GCP)",
-            "JavaScript (React, Puppeteer)"
-        ].sort().map(function (skill) {
-            return <ul key={skill}>{skill}</ul>
+            "Java",
+            "C/C++",
+            "JavaScript (NodeJS, VueJS, React)",
+            "Python (Pandas, openCV, NumPy, Matplotlib)",
+            "C#",
+        ].map(function (skill) {
+            return <li>{skill}</li>;
         });
 
-        const education = [{
-            "school": "McGill University",
-            "degree": "Software Engineering (B.Eng)",
-            "graduated": "September 2018 - Present",
-            "location": "Montréal, Québec",
-            "description": [
-                "Involved in McGill Robotics design club.",
-                "Tutoring at CSUS HelpDesk"
-            ]
-        },
+        const education = [
             {
-                "school": "Heritage College",
-                "degree": "General DEC - Science",
-                "graduated": "September 2016 - May 2018",
-                "location": "Gatineau, Québec",
-                "description": [
-                    "Graduated with honors"
-                ]
-            }].map(function (education) {
-            function renderList(d) {
-                const items = d.map((a) => <li key={a}>{a}</li>);
-                return <div>
-                    {items}
-                </div>
-            }
-
+                school: "McGill University",
+                degree: "Software Engineering (B.Eng)",
+                graduated: "Sep 2016 - May 2021 (Expected)",
+                location: "Montréal, Québec",
+            },
+        ].map(function (education) {
             return (
-                <div key={education.school}><h3>{education.school}</h3>
-                    <p className="info">{education.degree}<span>&bull;</span>
-                        <em className="date">{education.graduated}</em><br/>
+                <div key={education.school}>
+                    <h3>{education.school}</h3>
+                    <div className="info">
+                        {education.degree}
+                        <br />
+                        <em className="date">{education.graduated}</em>
+                        <br />
                         <em className="date">{education.location}</em>
-                    </p>
-                    {renderList(education.description)}
-                    &nbsp;
+                    </div>
                 </div>
-            )
+            );
         });
 
         return (
             <section id="resume">
                 <div className="row education">
                     <div className="three columns header-col">
-                        <h1><span>Education</span></h1>
+                        <h1>
+                            <span>Education</span>
+                        </h1>
                     </div>
 
                     <div className="nine columns main-col">
                         <div className="row item">
-                            <div className="twelve columns">
-                                {education}
-                            </div>
+                            <div className="twelve columns">{education}</div>
                         </div>
                     </div>
                 </div>
 
-
                 <div className="row work">
-
                     <div className="three columns header-col">
-                        <h1><span>Internships</span></h1>
+                        <h1>
+                            <span>Internships</span>
+                        </h1>
                     </div>
 
-                    <div className="nine columns main-col">
-                        {works}
-                    </div>
+                    <div className="nine columns main-col">{works}</div>
                 </div>
 
+                <div className="row work">
+                    <div className="three columns header-col">
+                        <h1>
+                            <span>Awards</span>
+                        </h1>
+                    </div>
+
+                    <div className="nine columns main-col">{awards}</div>
+                </div>
+
+                <div className="row work">
+                    <div className="three columns header-col">
+                        <h1>
+                            <span>Courses</span>
+                        </h1>
+                    </div>
+
+                    <div className="nine columns main-col">{courses}</div>
+                </div>
 
                 <div className="row skill">
                     <div className="three columns header-col">
-                        <h1><span>Skills</span></h1>
+                        <h1>
+                            <span>Skills</span>
+                        </h1>
                     </div>
 
                     <div className="nine columns main-col">
-                        <p>Here are some technologies that I have worked with</p>
-                        <div className="bars">
-                            <ul className="skills">
-                                {skills}
-                            </ul>
-                        </div>
+                        <p className="info">
+                            Here are some languages that I use day-to-day during
+                            my internships and projects:
+                        </p>
+                        <div className="skills">{skills}</div>
                     </div>
                 </div>
             </section>

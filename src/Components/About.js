@@ -20,12 +20,12 @@ class About extends Component {
                             what I've done with my time (professionally and not) so far!
                         </p>
 
-                        <p>
+                        <p align="justify"><b>
                         📣🚨Since the start of the COVID-19 Pandemic, I've been building Shopify Stores and Admin Panels free of charge for 
                         local businesses looking to transition to online platforms during this rough time. Please email me at ahmed.elehwany@mail.mcgill.ca
                         if you are a local business that have been negatively impacted by the COVID-19 Pandemic.<br/>
                         🌈 Ca va bien aller. 🌈
-                        </p>
+                        </b></p>
                         <div className="row">
                             <div className="columns contact-details">
                                 <h2>Contact Details</h2>
@@ -34,7 +34,7 @@ class About extends Component {
                                     <br />
                                     <span>Montréal, Quebéc</span>
                                     <br />
-                                    <span>4389273816</span>
+                                    <span>+1 438 927 3816</span>
                                     <br />
                                     <span>ahmed.elehwany@mail.mcgill.ca</span>
                                 </p>
