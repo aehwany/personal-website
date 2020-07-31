@@ -1,13 +1,16 @@
 {
   "main.css": "static/css/main.b388ca28.css",
   "main.css.map": "static/css/main.b388ca28.css.map",
-  "main.js": "static/js/main.db2c2a35.js",
-  "main.js.map": "static/js/main.db2c2a35.js.map",
+  "main.js": "static/js/main.4f02abde.js",
+  "main.js.map": "static/js/main.4f02abde.js.map",
   "static/media/AIDE.jpg": "static/media/AIDE.0798147a.jpg",
-  "static/media/McGillBird.jpg": "static/media/McGillBird.3bec5804.jpg",
   "static/media/dataVerif.png": "static/media/dataVerif.f74501f7.png",
   "static/media/ecse223.png": "static/media/ecse223.fd4f8cc2.png",
+  "static/media/falafel.jpeg": "static/media/falafel.1de0d74b.jpeg",
+  "static/media/iskender.jpg": "static/media/iskender.345d880b.jpg",
   "static/media/profilepic.jpg": "static/media/profilepic.7e235bcf.jpg",
-  "static/media/scripts.png": "static/media/scripts.d470b19a.png",
-  "static/media/website.jpg": "static/media/website.82de6b2a.jpg"
+  "static/media/ripples.jpg": "static/media/ripples.5448b836.jpg",
+  "static/media/squash.jpg": "static/media/squash.805f3dc0.jpg",
+  "static/media/volunteering.jpg": "static/media/volunteering.a040c085.jpg",
+  "static/media/wisp.png": "static/media/wisp.b9f58abb.png"
 }

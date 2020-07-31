@@ -283,8 +283,6 @@
     display: inline-block;
     clear: both;
     margin: 0 0 5px 0;
-    padding: 0 1% 1.1em 1%;
-    border-bottom: 1px dotted #ccc
 }
 
 .info[class] {
