@@ -5,12 +5,12 @@ class Footer extends Component {
         const networks = [
             {
                 "name": "linkedin",
-                "url": "https://www.linkedin.com/in/ding--ma/",
+                "url": "https://www.linkedin.com/in/ahmed-elehwany",
                 "className": "fa fa-linkedin-square"
             },
             {
                 "name": "github",
-                "url": "https://github.com/ding-ma",
+                "url": "https://github.com/aehwany",
                 "className": "fa fa-github"
             }
         ].map(function (network) {

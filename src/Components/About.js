@@ -42,11 +42,11 @@ class About extends Component {
                             <div className="columns download">
                                 <p>
                                     <a
-                                        href="https://mcgill-my.sharepoint.com/:b:/g/personal/ding_ma_mail_mcgill_ca/ES82qOpc0I1OkmsnucwAxA0BDsvpo_O5e-qOCzPbdsXtKw?e=akagpW"
+                                        href="Files/resume.pdf"
                                         className="button"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                    >
+                                    > 
                                         See PDF Resume
                                     </a>
                                 </p>

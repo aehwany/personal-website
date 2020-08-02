@@ -70,7 +70,7 @@ class Resume extends Component {
                     "Data Structures and Algorithms",
                     "Model-Based Programming",
                     "Systems Programming",
-                    "Signals and Networks,",
+                    "Signals and Networks",
                     "Computer Organization",
                 ],
             },

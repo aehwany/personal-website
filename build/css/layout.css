@@ -505,6 +505,11 @@ ul#nav li.current a {
     font: 25px/30px 'opensans-bold', sans-serif;
 }
 
+#resume ul {
+    display: inline;
+    list-style: disc;
+}
+
 #resume .header-col {
     padding-top: 9px;
 }
