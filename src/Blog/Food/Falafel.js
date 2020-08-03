@@ -24,7 +24,7 @@ class Falafel extends Component {
                             might sometimes trigger a feeling of homesickness
                             and nostalgia. I have personally experienced this
                             feeling in my first couple of months in Montréal as
-                            well as many of other international students that I
+                            well as many other international students that I
                             met in my first year.
                         </p>
                         <p>

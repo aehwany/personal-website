@@ -42,7 +42,7 @@ class About extends Component {
                             <div className="columns download">
                                 <p>
                                     <a
-                                        href="Files/resume.pdf"
+                                        href="https://drive.google.com/file/d/1ehCfUEVTvBbBXkudJWVYkbjkJUgNC5xI/view?usp=sharing"
                                         className="button"
                                         target="_blank"
                                         rel="noopener noreferrer"
