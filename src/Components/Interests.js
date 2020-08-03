@@ -199,6 +199,22 @@ class Interests extends Component {
                     <h1>Music</h1>
                     <div class="book-shelf">
                         <iframe
+                            src="https://open.spotify.com/embed/playlist/14f9xlIENpOGspIQ3Vv3PP"
+                            width="300"
+                            height="380"
+                            frameborder="0"
+                            allowtransparency="true"
+                            allow="encrypted-media"
+                        ></iframe>
+                        <iframe
+                            src="https://open.spotify.com/embed/playlist/73Tt0c2SXMJoF3tkmlQzmW"
+                            width="300"
+                            height="380"
+                            frameborder="0"
+                            allowtransparency="true"
+                            allow="encrypted-media"
+                        ></iframe>
+                        <iframe
                             src="https://open.spotify.com/embed/playlist/44jwAWPFwRyjtfU4Sl4guW"
                             width="300"
                             height="380"
@@ -224,22 +240,6 @@ class Interests extends Component {
                         ></iframe>
                         <iframe
                             src="https://open.spotify.com/embed/album/1rVhockt4RAiZFaK3M3zPB"
-                            width="300"
-                            height="380"
-                            frameborder="0"
-                            allowtransparency="true"
-                            allow="encrypted-media"
-                        ></iframe>
-                        <iframe
-                            src="https://open.spotify.com/embed/playlist/73Tt0c2SXMJoF3tkmlQzmW"
-                            width="300"
-                            height="380"
-                            frameborder="0"
-                            allowtransparency="true"
-                            allow="encrypted-media"
-                        ></iframe>
-                        <iframe
-                            src="https://open.spotify.com/embed/playlist/14f9xlIENpOGspIQ3Vv3PP"
                             width="300"
                             height="380"
                             frameborder="0"
