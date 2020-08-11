@@ -2,6 +2,8 @@ import React, { Component, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import wisp from "../images/wisp.png";
 import mizan from "../images/mizan.png";
+import compression from "../images/compression.png";
+import GitHubButton from "react-github-button";
 
 class Portfolio extends Component {
     render() {
@@ -17,8 +19,9 @@ class Portfolio extends Component {
                 ],
                 tech: ["Kubernetes - ", "ExpressJS - ", "MongoDB - ", "VueJS"],
                 image: wisp,
-                url:
-                    "https://github.com/ding-ma/Projet-tude-de-cas-en-Qualit-de-l-air",
+                url: "https://wisp.training/",
+                code: "https://github.com/Compete-McGill",
+                live: true,
             },
             {
                 title: "Marché Mizan (In Progress)",
@@ -37,7 +40,7 @@ class Portfolio extends Component {
                     "Google Maps Api",
                 ],
                 image: mizan,
-                url: "https://github.com/ding-ma/Weather_Bulleting_Separator",
+                url: null,
             },
             {
                 title: "Treeple Tree Management System",
@@ -47,11 +50,14 @@ class Portfolio extends Component {
                     It won Second Place out of over 20 groups during the semester \
                     Treeple is a system to manage trees and view sustainability information in the Greater Montreal Area. \
                     It has a monolithic Spring Boot Backend, a VueJS frontend and an Android Frontend!",
+                    "Note: Feel free to test out the application by logging in with username and password 'admin!'",
                 ],
                 tech: ["Spring Boot - ", "VueJS - ", "Android(Java)"],
                 image:
                     "https://camo.githubusercontent.com/87bd964b9c19e914c17c9004f1e28f1f869f1031/68747470733a2f2f692e696d6775722e636f6d2f43367a466652682e706e67",
-                url: "https://github.com/ding-ma/ECSE-223-Brick-Breaker",
+                url: "https://treeple-frontend.herokuapp.com",
+                code: "https://github.com/idodin/TreeManagementSystem/",
+                live: true,
             },
             {
                 title:
@@ -71,7 +77,31 @@ class Portfolio extends Component {
                     "Constraint Programming",
                 ],
                 image: null,
-                url: "https://github.com/ding-ma/mcgill-autoregistration",
+                url:
+                    "https://drive.google.com/file/d/1A2nMNsHzCr0ixbuYOpVx6mFUd4C7qUid/view?usp=sharing",
+                code:
+                    "https://github.com/aehwany/viatra-yakindu-test-generator",
+                report:
+                    "https://drive.google.com/file/d/1u4Zn215vxmXrqpxwbtuXsDu2HmNgAt4I/view?usp=sharing",
+                poster:
+                    "https://drive.google.com/file/d/1A2nMNsHzCr0ixbuYOpVx6mFUd4C7qUid/view?usp=sharing",
+            },
+            {
+                title: "Image Processing",
+                section: "image-processing",
+                description: [
+                    "This is a simple Python CLI tool that applies image processing operations such as denoising and compression to an input image. \
+                    It uses functions from 'numPy' library to perform linear algebra, fourier transform, and matrices operations for applying image tranformation techniques. \
+                    It also uses OpenCV for graphical illustration of the processed images. You can check out the attached report to view detailed code snipets and graphical results of \
+                    processing an example input image.",
+                ],
+                tech: ["Python - ", "NumPy - ", "OpenCV - ", "Matplotlib"],
+                image: compression,
+                url: "https://github.com/aehwany/Image-Denoise-Compression-FFT",
+                code:
+                    "https://github.com/aehwany/Image-Denoise-Compression-FFT",
+                report:
+                    "https://github.com/aehwany/Image-Denoise-Compression-FFT/blob/master/ECSE%20316%20Assignment%202%20Report.ipynb",
             },
             {
                 title: "Network Design CLI",
@@ -83,29 +113,66 @@ class Portfolio extends Component {
                 ],
                 tech: ["Python"],
                 image: null,
-                url: "https://github.com/ding-ma/portfolio",
+                url: "https://github.com/aehwany/CommunicationNetworkDesigner",
+                code: "https://github.com/aehwany/CommunicationNetworkDesigner",
             },
         ].map((project) => {
             return (
                 <section id={project.section}>
-                    <h1>{project.title}</h1>
+                    {project.url ? (
+                        <h1>
+                            <a href={project.url} target="_blank">
+                                {project.title}
+                            </a>
+                        </h1>
+                    ) : (
+                        <h1>{project.title}</h1>
+                    )}
+
                     {project.description.map((item) => {
                         return <p>{item}</p>;
                     })}
                     <p>
                         <b>Technologies: </b> {project.tech.map((item) => item)}
                     </p>
-                    {project.image ? (
-                        <img
-                            style={{
-                                "max-height": "450px",
-                                "border-radius": "15px",
-                                padding: "10px",
-                            }}
-                            src={project.image}
-                            alt=""
-                        ></img>
-                    ) : null}
+                    <p>
+                        {project.image ? (
+                            <div>
+                                <img
+                                    style={{
+                                        "max-height": "450px",
+                                        "border-radius": "15px",
+                                        padding: "10px",
+                                    }}
+                                    src={project.image}
+                                    alt=""
+                                ></img>{" "}
+                                <br />
+                            </div>
+                        ) : null}
+                        {project.url && project.live ? (
+                            <a href={project.url} target="_blank">
+                                <h2>live</h2> |{" "}
+                            </a>
+                        ) : null}
+                        {project.code ? (
+                            <a href={project.code} target="_blank">
+                                <h2>code</h2>
+                            </a>
+                        ) : null}
+                        {project.report ? (
+                            <a href={project.report} target="_blank">
+                                {" "}
+                                | <h2>report</h2>
+                            </a>
+                        ) : null}
+                        {project.poster ? (
+                            <a href={project.poster} target="_blank">
+                                {" "}
+                                | <h2>poster</h2>
+                            </a>
+                        ) : null}
+                    </p>
                     <hr />
                 </section>
             );
@@ -133,6 +200,14 @@ class Portfolio extends Component {
                         <li>
                             <a className="smoothscroll" href="#dp">
                                 Capstone Project
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className="smoothscroll"
+                                href="#image-processing"
+                            >
+                                Image Processing
                             </a>
                         </li>
                         <li>

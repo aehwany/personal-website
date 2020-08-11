@@ -137,7 +137,7 @@ header .scrolldown a:hover {
     color: #b0a200;
 }
 
- #nav-ver {
+#nav-ver {
     font: 14px "opensans-bold", sans-serif;
     max-width: 20% !important;
     position: sticky;
@@ -420,8 +420,24 @@ ul#nav li.current a {
     letter-spacing: 1px;
 }
 
+#portfolio h2 {
+    font: italic 16px/18px "opensans-bold", sans-serif;
+    text-decoration: underline;
+    display: inline;
+}
+
+#portfolio a {
+    color: #2b2b2b;
+}
+
+#portfolio a:hover {
+    text-decoration: underline;
+}
+
 #portfolio p {
     color: #2b2b2b;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #portfolio h1 span {
@@ -438,51 +454,6 @@ ul#nav li.current a {
     float: left;
     width: 80%;
 }
-
-/* #portfolio .nav-ver {
-    font: 14px "opensans-bold", sans-serif;
-
-    max-width: 10% !important;
-    position: fixed;
-    float: left;
-    padding: 20px 40px;
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    background-color: #2b2b2b;
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
-    z-index: 1000;
-    min-width: 130px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    top: 70px;
-    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.04), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
-        0 3px 3px -2px rgba(0, 0, 0, 0.12);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    max-height: 400px;
-    overflow-y: auto;
-} */
-/* border-bottom: 1px solid #ccc; 
-    border-top: 1px solid #ccc; } */
-
-/* #portfolio .nav-ver li a {
-    cursor: pointer;
-    display: block;
-    padding: 8px 13px;
-    text-decoration: none;
-    text-align: center;
-    color: #fdeaa5;
-
-    -webkit-transition: color 0.2s ease-in-out;
-    -moz-transition: color 0.2s ease-in-out;
-    -o-transition: color 0.2s ease-in-out;
-    -ms-transition: color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
-} */
-
-/* #portfolio .nav-ver li a:hover {
-    color: #b0a200;
-} */
 
 ul#nav li.current a {
     color: #b0a200;
@@ -1055,6 +1026,8 @@ call-to-action .button {
 #interests p {
     line-height: 30px;
     color: #2b2b2b;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #interests h1 span {
@@ -1138,6 +1111,11 @@ footer a:hover {
 
 footer footer a:focus {
     color: #7a7a7a;
+}
+
+footer p {
+    color: #7a7a7a;
+    font-size: 16px;
 }
 
 /* social links */

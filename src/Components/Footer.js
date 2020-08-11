@@ -31,6 +31,9 @@ class Footer extends Component {
                     <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i
                         className="icon-up-open"/></a></div>
                 </div>
+                <div className="row">
+                    <p>Made with ❤️ by <b>Ahmed Elehwany</b> - ©️ 2020</p>
+                </div>
             </footer>
         );
     }

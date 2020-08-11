@@ -28,8 +28,8 @@ class Falafel extends Component {
                             met in my first year.
                         </p>
                         <p>
-                            A very interesting fun fact I found out in my first
-                            year was that food is one of the best things that
+                            A very interesting fun fact I found out was that food 
+                            is one of the best things that
                             could make you still feel connected back to home and
                             to your loved ones. So in my case, I thought “hmm,
                             what food could possibly be better than Falafels to
@@ -62,11 +62,7 @@ class Falafel extends Component {
                             Saleh Seh in 2004. Seh is also from Israel but is an
                             Arab Muslim and identifies as a Palestinian. Baruch
                             quickly hired him and a few years ago, made Seh the
-                            manager of his restaurant. The two say they realize
-                            their relationship may seem odd, but for them, it’s
-                            all they know. “The way we live everyday in Israel —
-                            Israelis and Arabs they live together — day to day,”
-                            said Baruch. The pair says their goal was to create
+                            manager of his restaurant. The pair says their goal was to create
                             a space where every person, regardless of their
                             nationality or religion, can gather and eat. Though
                             the two won’t talk about politics, there is one
