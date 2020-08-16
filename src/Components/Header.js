@@ -88,16 +88,6 @@ class Header extends Component {
                         <hr />
                         <ul className="social">{networks}</ul>
                     </div>
-                    <div>
-                        <a
-                            class="github-button"
-                            href="https://github.com/idodin"
-                            data-show-count="true"
-                            aria-label="Follow @idodin on GitHub"
-                        >
-                            Follow @idodin
-                        </a>
-                    </div>
                 </div>
 
                 <p className="scrolldown">
