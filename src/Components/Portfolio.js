@@ -20,7 +20,7 @@ class Portfolio extends Component {
                 tech: ["Kubernetes - ", "ExpressJS - ", "MongoDB - ", "VueJS"],
                 image: wisp,
                 url: "https://wisp.training/",
-                code: "https://github.com/Compete-McGill",
+                code: "https://github.com/Compete-McGill/wisp",
                 live: true,
             },
             {
@@ -92,7 +92,7 @@ class Portfolio extends Component {
                 description: [
                     "This is a simple Python CLI tool that applies image processing operations such as denoising and compression to an input image. \
                     It uses functions from 'numPy' library to perform linear algebra, fourier transform, and matrices operations for applying image tranformation techniques. \
-                    It also uses OpenCV for graphical illustration of the processed images. You can check out the attached report to view detailed code snipets and graphical results of \
+                    It also uses OpenCV for graphical illustration of the processed images. You can check out the attached report using Jupyter Notebook to view detailed code snipets and graphical results of \
                     processing an example input image.",
                 ],
                 tech: ["Python - ", "NumPy - ", "OpenCV - ", "Matplotlib"],
@@ -180,43 +180,43 @@ class Portfolio extends Component {
 
         return (
             <section id="portfolio">
-                <nav id="nav-ver">
-                    <ul>
-                        <li>
-                            <a className="smoothscroll" href="#wisp">
-                                Wisp Online
-                            </a>
-                        </li>
-                        <li>
-                            <a className="smoothscroll" href="#mizan">
-                                Marché Mizan
-                            </a>
-                        </li>
-                        <li>
-                            <a className="smoothscroll" href="#treeple">
-                                TreePle
-                            </a>
-                        </li>
-                        <li>
-                            <a className="smoothscroll" href="#dp">
-                                Capstone Project
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                className="smoothscroll"
-                                href="#image-processing"
-                            >
-                                Image Processing
-                            </a>
-                        </li>
-                        <li>
-                            <a className="smoothscroll" href="#network">
-                                Network Designer
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                    {/* <nav id="nav-ver">
+                        <ul>
+                            <li>
+                                <a className="smoothscroll" href="#wisp">
+                                    Wisp Online
+                                </a>
+                            </li>
+                            <li>
+                                <a className="smoothscroll" href="#mizan">
+                                    Marché Mizan
+                                </a>
+                            </li>
+                            <li>
+                                <a className="smoothscroll" href="#treeple">
+                                    TreePle
+                                </a>
+                            </li>
+                            <li>
+                                <a className="smoothscroll" href="#dp">
+                                    Capstone Project
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    className="smoothscroll"
+                                    href="#image-processing"
+                                >
+                                    Image Processing
+                                </a>
+                            </li>
+                            <li>
+                                <a className="smoothscroll" href="#network">
+                                    Network Designer
+                                </a>
+                            </li>
+                        </ul>
+                    </nav> */}
                 <div className="row">
                     <div className="ten columns main-col">{projects}</div>
                 </div>
