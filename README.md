@@ -5,4 +5,4 @@ This website is live at [ahmedelehwany.com](https://ahmedelehwany.com)
 
 ![blog](https://i.imgur.com/0nZtBax.png)
 
-* Template based on [Ding Ma's](https://github.com/ding-ma)website.
+* Template based on [Ding Ma's](https://github.com/ding-ma) website.
