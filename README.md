@@ -4,3 +4,5 @@ Source-code for my personal website built with Javascript and React and made eas
 This website is live at [ahmedelehwany.com](https://ahmedelehwany.com)
 
 ![blog](https://i.imgur.com/0nZtBax.png)
+
+Template based on [Ding Ma's] (https://github.com/ding-ma)
