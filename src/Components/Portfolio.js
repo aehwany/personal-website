@@ -180,7 +180,7 @@ class Portfolio extends Component {
 
         return (
             <section id="portfolio">
-                    {/* <nav id="nav-ver">
+                    <nav id="nav-ver">
                         <ul>
                             <li>
                                 <a className="smoothscroll" href="#wisp">
@@ -216,7 +216,7 @@ class Portfolio extends Component {
                                 </a>
                             </li>
                         </ul>
-                    </nav> */}
+                    </nav>
                 <div className="row">
                     <div className="ten columns main-col">{projects}</div>
                 </div>
