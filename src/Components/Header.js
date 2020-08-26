@@ -81,8 +81,8 @@ class Header extends Component {
                         </h1>
                         <hr />
                         <h3>
-                            I'm currently a senior year software engineering
-                            student at McGill University in the{" "}
+                            I'm currently a graduating software engineer
+                            at McGill University<br/> in the{" "}
                             <i>belle province</i> of Québec.
                         </h3>
                         <hr />
