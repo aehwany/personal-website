@@ -180,44 +180,48 @@ class Portfolio extends Component {
 
         return (
             <section id="portfolio">
-                    <nav id="nav-ver">
-                        <ul>
-                            <li>
-                                <a className="smoothscroll" href="#wisp">
-                                    Wisp Online
-                                </a>
-                            </li>
-                            <li>
-                                <a className="smoothscroll" href="#mizan">
-                                    Marché Mizan
-                                </a>
-                            </li>
-                            <li>
-                                <a className="smoothscroll" href="#treeple">
-                                    TreePle
-                                </a>
-                            </li>
-                            <li>
-                                <a className="smoothscroll" href="#dp">
-                                    Capstone Project
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    className="smoothscroll"
-                                    href="#image-processing"
-                                >
-                                    Image Processing
-                                </a>
-                            </li>
-                            <li>
-                                <a className="smoothscroll" href="#network">
-                                    Network Designer
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                <nav id="nav-ver">
+                    <ul>
+                        <li>
+                            <a className="smoothscroll" href="#wisp">
+                                Wisp Online
+                            </a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#mizan">
+                                Marché Mizan
+                            </a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#treeple">
+                                TreePle
+                            </a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#dp">
+                                Capstone Project
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className="smoothscroll"
+                                href="#image-processing"
+                            >
+                                Image Processing
+                            </a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#network">
+                                Network Designer
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
                 <div className="row">
+                    <div className="ten columns main-col">
+                        <h3>PROJECTS</h3>
+                        <br/>
+                    </div>
                     <div className="ten columns main-col">{projects}</div>
                 </div>
             </section>

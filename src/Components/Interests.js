@@ -100,6 +100,8 @@ class Interests extends Component {
         return (
             <section id="interests">
                 <div className="row">
+                    <h3>INTERESTS</h3>
+                    <br/>
                     <div className="column">
                         <h1>Squash</h1>
                         <p>
