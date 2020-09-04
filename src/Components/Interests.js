@@ -206,56 +206,61 @@ class Interests extends Component {
                 </div>
 
                 <div className="row">
-                    <h1>Music</h1>
-                    <div class="book-shelf">
-                        <iframe
-                            src="https://open.spotify.com/embed/playlist/14f9xlIENpOGspIQ3Vv3PP"
-                            width="300"
-                            height="380"
-                            frameborder="0"
-                            allowtransparency="true"
-                            allow="encrypted-media"
-                        ></iframe>
-                        <iframe
-                            src="https://open.spotify.com/embed/playlist/73Tt0c2SXMJoF3tkmlQzmW"
-                            width="300"
-                            height="380"
-                            frameborder="0"
-                            allowtransparency="true"
-                            allow="encrypted-media"
-                        ></iframe>
-                        <iframe
-                            src="https://open.spotify.com/embed/playlist/44jwAWPFwRyjtfU4Sl4guW"
-                            width="300"
-                            height="380"
-                            frameborder="0"
-                            allowtransparency="true"
-                            allow="encrypted-media"
-                        ></iframe>
-                        <iframe
-                            src="https://open.spotify.com/embed/album/1jToVugwBEzcak8gJNZG2f"
-                            width="300"
-                            height="380"
-                            frameborder="0"
-                            allowtransparency="true"
-                            allow="encrypted-media"
-                        ></iframe>
-                        <iframe
-                            src="https://open.spotify.com/embed/album/5PVuX09frPq7AMYkkdcDfR"
-                            width="300"
-                            height="380"
-                            frameborder="0"
-                            allowtransparency="true"
-                            allow="encrypted-media"
-                        ></iframe>
-                        <iframe
-                            src="https://open.spotify.com/embed/album/1rVhockt4RAiZFaK3M3zPB"
-                            width="300"
-                            height="380"
-                            frameborder="0"
-                            allowtransparency="true"
-                            allow="encrypted-media"
-                        ></iframe>
+                    <div className="column">
+                        <h1>Music</h1>
+                        <br />
+                    </div>
+                </div>
+                <div className="row">
+                    <div align="center" class="book-shelf">
+                            <iframe
+                                src="https://open.spotify.com/embed/playlist/14f9xlIENpOGspIQ3Vv3PP"
+                                width="300"
+                                height="380"
+                                frameborder="0"
+                                allowtransparency="true"
+                                allow="encrypted-media"
+                            ></iframe>
+                            <iframe
+                                src="https://open.spotify.com/embed/playlist/73Tt0c2SXMJoF3tkmlQzmW"
+                                width="300"
+                                height="380"
+                                frameborder="0"
+                                allowtransparency="true"
+                                allow="encrypted-media"
+                            ></iframe>
+                            <iframe
+                                src="https://open.spotify.com/embed/playlist/44jwAWPFwRyjtfU4Sl4guW"
+                                width="300"
+                                height="380"
+                                frameborder="0"
+                                allowtransparency="true"
+                                allow="encrypted-media"
+                            ></iframe>
+                            <iframe
+                                src="https://open.spotify.com/embed/album/1jToVugwBEzcak8gJNZG2f"
+                                width="300"
+                                height="380"
+                                frameborder="0"
+                                allowtransparency="true"
+                                allow="encrypted-media"
+                            ></iframe>
+                            <iframe
+                                src="https://open.spotify.com/embed/album/5PVuX09frPq7AMYkkdcDfR"
+                                width="300"
+                                height="380"
+                                frameborder="0"
+                                allowtransparency="true"
+                                allow="encrypted-media"
+                            ></iframe>
+                            <iframe
+                                src="https://open.spotify.com/embed/album/1rVhockt4RAiZFaK3M3zPB"
+                                width="300"
+                                height="380"
+                                frameborder="0"
+                                allowtransparency="true"
+                                allow="encrypted-media"
+                            ></iframe>
                     </div>
                 </div>
             </section>
