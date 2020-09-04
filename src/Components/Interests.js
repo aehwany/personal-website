@@ -100,9 +100,9 @@ class Interests extends Component {
         return (
             <section id="interests">
                 <div className="row">
-                    <h3>INTERESTS</h3>
-                    <br/>
                     <div className="column">
+                        <h3>INTERESTS</h3>
+                        <br />
                         <h1>Squash</h1>
                         <p>
                             Since I held my first racquet 8 years ago, I fell in
@@ -170,9 +170,13 @@ class Interests extends Component {
                 </div>
 
                 <div className="row">
-                    <div className="twelve columns collapsed">
+                    <div className="column">
                         <h1>Check out my food blog.</h1>
-
+                        <br />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="twelve columns collapsed">
                         <div
                             id="portfolio-wrapper"
                             className="bgrid-quarters s-bgrid-thirds cf"
@@ -184,9 +188,13 @@ class Interests extends Component {
                 </div>
 
                 <div className="row">
-                    <div className="twelve columns collapsed">
+                    <div className="column">
                         <h1>Check out my travel blog.</h1>
-
+                        <br />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="twelve columns collapsed">
                         <div
                             id="portfolio-wrapper"
                             className="bgrid-quarters s-bgrid-thirds cf"
