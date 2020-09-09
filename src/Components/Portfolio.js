@@ -24,13 +24,30 @@ class Portfolio extends Component {
                 live: true,
             },
             {
-                title: "Marché Mizan (In Progress)",
+                title: "Remote Tutor (In Progress...)",
+                section: "remote-tutor",
+                description: [
+                    "I’m currently building an online remote tutoring platform aimed at Egyptian tutors to communicate with their \
+                    students during the COVID pandemic and offer online quizzes and assignments with automatic graded feedback. \
+                    The platform also integrates features for video recordings (upload and download), as well as providing a dashboard \
+                    with announcements and discussion threads. The product will be avaliable in both English and Arabic. We already \
+                    have a first tutor signed up to use it this year!"
+                ],
+                tech: ["Go - ", "Echo framework - ", "VueJS - ", "MySQL"],
+                image: null,
+                url: "https://github.com/remote-tutor/remote-tutor-backend",
+                code: "https://github.com/remote-tutor/remote-tutor-backend",
+                live: false,
+            },
+            {
+                title: "Marché Mizan (In Progress...)",
                 section: "mizan",
                 description: [
                     "Mizan is a shopify website that I built for a local market to help them sustain their operations by facilitating remote online shopping \
-                and minimize potential losses imposed by the COVID-19 situation. In addition to the website, I have also built a simplified user-friendly embedded application that acts as a customized admin panel  \
-                to help manage running the store easily. The application interacts with the Shopify Admin API to carryout operations such as updating inventory, viewing received orders \
-                and capturing authorized payments. We hope to post the application on the Shopify AppStore to be used by other local stores soon!",
+                    and minimize potential losses imposed by the COVID-19 situation. In addition to the website, I have also built a simplified user-friendly \
+                    embedded application that acts as a customized admin panel to help manage running the store easily. The application interacts with the \
+                    Shopify Admin API to carryout operations such as updating inventory, viewing received orders and capturing authorized payments. We hope to \
+                    post the application on the Shopify AppStore to be used by other local stores soon!",
                 ],
                 tech: [
                     "ReactJS - ",
@@ -185,6 +202,11 @@ class Portfolio extends Component {
                         <li>
                             <a className="smoothscroll" href="#wisp">
                                 Wisp Online
+                            </a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#remote-tutor">
+                                Remote Tutor
                             </a>
                         </li>
                         <li>
