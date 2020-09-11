@@ -2,6 +2,7 @@ import React, { Component, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import wisp from "../images/wisp.png";
 import mizan from "../images/mizan.png";
+import tutoring from "../images/tutoring.png";
 import compression from "../images/compression.png";
 import GitHubButton from "react-github-button";
 
@@ -34,7 +35,7 @@ class Portfolio extends Component {
                     have a first tutor signed up to use it this year!"
                 ],
                 tech: ["Go - ", "Echo framework - ", "VueJS - ", "MySQL"],
-                image: null,
+                image: tutoring,
                 url: "https://github.com/remote-tutor/remote-tutor-backend",
                 code: "https://github.com/remote-tutor/remote-tutor-backend",
                 live: false,
@@ -157,7 +158,8 @@ class Portfolio extends Component {
                             <div>
                                 <img
                                     style={{
-                                        "max-height": "450px",
+                                        // "max-height": "450px",
+                                        "max-width": "750px",
                                         "border-radius": "15px",
                                         padding: "10px",
                                     }}
