@@ -158,8 +158,7 @@ class Portfolio extends Component {
                             <div>
                                 <img
                                     style={{
-                                        // "max-height": "450px",
-                                        "max-width": "750px",
+                                        "max-height": "450px",
                                         "border-radius": "15px",
                                         padding: "10px",
                                     }}
