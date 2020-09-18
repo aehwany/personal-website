@@ -4,6 +4,15 @@ class Resume extends Component {
     render() {
         const works = [
             {
+                company: "Major League Hacking",
+                title: "Open Source Fellowship",
+                location: "Remote",
+                years: "Sep 2020 - Present",
+                description: [
+                    "Contributing to wide open source projects in a pod of 10 remote developers from around the world.",
+                ],
+            },
+            {
                 company: "CAE Inc.",
                 title: "Software Engineering Intern",
                 location: "Montréal, Québec",
@@ -48,7 +57,7 @@ class Resume extends Component {
         const awards = [
             "2019 - CAE Certificate of Excellence",
             "2019 - Most Practical Award in 'McGill Women in CS Hackathon'",
-            "2018,2019 - McGill Tomlinson Engagement Award for Mentorship",
+            "2018, 2019 - McGill Tomlinson Engagement Award for Mentorship",
         ].map((award) => {
             return <li>{award}</li>;
         });
@@ -90,6 +99,7 @@ class Resume extends Component {
             "Java",
             "C/C++",
             "JavaScript (NodeJS, VueJS, React)",
+            "Go",
             "Python (Pandas, openCV, NumPy, Matplotlib)",
             "C#",
         ].map(function (skill) {
