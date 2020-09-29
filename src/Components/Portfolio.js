@@ -3,8 +3,8 @@ import { Nav, Navbar } from "react-bootstrap";
 import wisp from "../images/wisp.png";
 import mizan from "../images/mizan.png";
 import tutoring from "../images/tutoring.png";
+import switchcheck from "../images/switchcheck.png";
 import compression from "../images/compression.png";
-import GitHubButton from "react-github-button";
 
 class Portfolio extends Component {
     render() {
@@ -23,6 +23,20 @@ class Portfolio extends Component {
                 url: "https://wisp.training/",
                 code: "https://github.com/Compete-McGill/wisp",
                 live: true,
+            },
+            {
+                title: "Switch Check",
+                section: "switch-check",
+                description: [
+                    "When building a custom keyboard, it's important to test your board before you put everything together (or else have to take it all apart when \
+                    something's wrong). This site makes it easy to test each key on your keyboard, marking pressed keys so you can continue until everything is green.\
+                    We also offer dynamic themes (both light and dark variations), allowing you to switch the look of the site at any time."
+                ],
+                tech: ["React - ", "NextJS - ", "Typescript - ", "ChartJS"],
+                image: switchcheck,
+                url: "https://keyboard-checker-brown.vercel.app/",
+                code: "https://github.com/MLH-Fellowship/keyboard-checker",
+                live: false,
             },
             {
                 title: "Remote Tutor (In Progress...)",
@@ -203,6 +217,11 @@ class Portfolio extends Component {
                         <li>
                             <a className="smoothscroll" href="#wisp">
                                 Wisp Online
+                            </a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#switch-check">
+                                Switch Check
                             </a>
                         </li>
                         <li>
