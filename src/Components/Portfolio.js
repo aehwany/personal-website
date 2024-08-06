@@ -39,7 +39,7 @@ class Portfolio extends Component {
                 live: false,
             },
             {
-                title: "Remote Tutor (In Progress...)",
+                title: "Remote Tutor",
                 section: "remote-tutor",
                 description: [
                     "I’m currently building an online remote tutoring platform aimed at Egyptian tutors to communicate with their \
@@ -55,7 +55,7 @@ class Portfolio extends Component {
                 live: false,
             },
             {
-                title: "Marché Mizan (In Progress...)",
+                title: "Marché Mizan",
                 section: "mizan",
                 description: [
                     "Mizan is a shopify website that I built for a local market to help them sustain their operations by facilitating remote online shopping \

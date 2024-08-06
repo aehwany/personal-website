@@ -80,11 +80,6 @@ class Header extends Component {
                             <span className="yellowText">.</span>
                         </h1>
                         <hr />
-                        <h3>
-                            I'm currently a graduating software engineer
-                            at McGill University<br/> in the{" "}
-                            <i>belle province</i> of Québec.
-                        </h3>
                         <hr />
                         <ul className="social">{networks}</ul>
                     </div>

@@ -32,7 +32,7 @@ class Footer extends Component {
                         className="icon-up-open"/></a></div>
                 </div>
                 <div className="row">
-                    <p>Made with ❤️ by <b>Ahmed Elehwany</b> - ©️ 2020</p>
+                    <p>Made with ❤️ by <b>Ahmed Elehwany</b> - ©️ 2022</p>
                 </div>
             </footer>
         );

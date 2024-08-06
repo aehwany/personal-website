@@ -4,19 +4,30 @@ class Resume extends Component {
     render() {
         const works = [
             {
+                company: "Morgan Stanley",
+                title: "Software Engineer",
+                location: "Montréal, Québec",
+                years: "May 2021 - Present",
+                description: [
+                    "Part of a global team processing over 547 billion$ worth of daily trades.",
+                    "Real-time pricing and risk calculation for Fixed Income securities.",
+                    "Works on trading apps used directly by US Treasury and Euro clients.",
+                ],
+            },
+            {
                 company: "Major League Hacking",
                 title: "Open Source Fellowship",
                 location: "Remote",
-                years: "Sep 2020 - Present",
+                years: "Sep 2020 - December 2020",
                 description: [
-                    "Contributing to wide open source projects in a pod of 10 remote developers from around the world.",
+                    "Contributed to wide open source projects in a pod of 10 remote developers from around the world.",
                 ],
             },
             {
                 company: "CAE Inc.",
                 title: "Software Engineering Intern",
                 location: "Montréal, Québec",
-                years: "May 2020 - August 2020",
+                years: "January 2019 - August 2019",
                 description: [
                     "Awarded Certificate of Excellence for algorithmic optimization.",
                     "Designed, improved and tested C++ APIs and internal tools, shipping them successfully into production.",
@@ -24,10 +35,10 @@ class Resume extends Component {
                 ],
             },
             {
-                company: "Tactio Health Group",
+                company: "CareSimple",
                 title: "IoT Software Engineering Intern",
                 location: "Montréal, Québec",
-                years: "May 2019 - August 2019",
+                years: "May 2018 - August 2018",
                 description: [
                     "Worked on IoT Bluetooth data syncing between medical devices.",
                     "Partook in the design of a new Zigbee protocol.",
@@ -110,7 +121,7 @@ class Resume extends Component {
             {
                 school: "McGill University",
                 degree: "Software Engineering (B.Eng)",
-                graduated: "Sep 2016 - May 2021 (Expected)",
+                graduated: "Sep 2016 - May 2021",
                 location: "Montréal, Québec",
             },
         ].map(function (education) {
@@ -147,7 +158,7 @@ class Resume extends Component {
                 <div className="row work">
                     <div className="three columns header-col">
                         <h1>
-                            <span>Internships</span>
+                            <span>Industry</span>
                         </h1>
                     </div>
 
@@ -184,7 +195,7 @@ class Resume extends Component {
                     <div className="nine columns main-col">
                         <p className="info">
                             Here are some languages that I use day-to-day during
-                            my internships and projects:
+                            my work and projects:
                         </p>
                         <div className="skills">{skills}</div>
                     </div>
